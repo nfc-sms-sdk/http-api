@@ -1,6 +1,3 @@
-### 需求概述
-商家对用户提供HTTP/HTTPS短信接口服务,主要包括短信token获取接口，发送接口，模板短信发送接口，状态(回执)查询接口,余额查询接口。
-用户请求从SLB转发到Nginx反向代理到gateway api分发到http api servcie。  gateway api负责令牌的颁发、获取，验证(AES加密)。
 
 ### API 接口
 
