@@ -1,12 +1,12 @@
 /**
  * Project Name:
- * Class Name:com.sioo.sdk.util.java
+ * Class Name:com.ufc.sdk.util.java
  * <p>
  * Version     Date         Author
  * -----------------------------------------
  * 1.0    2015年11月17日      HanKeQi
  * <p>
- * Copyright (c) 2019, sioo All Rights Reserved.
+ * Copyright (c) 2019, ufc All Rights Reserved.
  */
 package com.ufc.sdk.util;
 

@@ -1,12 +1,12 @@
 /**
  * Project Name:
- * Class Name:com.sioo.sdk.demo.java
+ * Class Name:com.ufc.sdk.demo.java
  * <p>
  * Version     Date         Author
  * -----------------------------------------
  * 1.0    2015年11月17日      HanKeQi
  * <p>
- * Copyright (c) 2019, sioo All Rights Reserved.
+ * Copyright (c) 2019, ufc All Rights Reserved.
  */
 package com.ufc.sdk.demo;
 
@@ -26,7 +26,7 @@ import java.util.Map;
 public class SmsBalanceDemo {
 
     public static void main(String[] args) {
-        //TODO 从 ${com.sioo.sdk.demo.ObtainTokenDemo} 获取
+        //TODO 从 ${com.ufc.sdk.demo.ObtainTokenDemo} 获取
         String token = "7aAwkbzy3T3vNGKbtULC548WbV3F0omXHrZYQ2Ut343uvghLboPfb2sAhSIs5jrHcTlZ7LtOU8F5AoVagu4fal42-f7bS68GYTGxvTEVAHo=";
         Map<String, Object> params = new HashMap<>();
         params.put("token", token);
