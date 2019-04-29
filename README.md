@@ -85,8 +85,8 @@ http://openapi.gateway.paasw.com/sms/deliver
     "send_time" : "2017-01-01 00:00:00",
     "report_time" : "2017-01-01 00:00:00",
     "success" : true,
-    "code" : "0",//0:用户接收成功；1：提交失败，4：失败，5：屏蔽词，6：审核驳回，7：黑/白名单，8：超频，9：未知
-    "message" : "用户接收成功",
+    "code" : "10000",//10000:用户接收成功；1：提交失败，4：失败，5：屏蔽词，6：审核驳回，7：黑/白名单，8：超频，9：未知
+    "message" : "请求成功",
     "sms_size" : "1",
     "biz_id" : "39036632588910887018",
   }
@@ -141,8 +141,8 @@ http://openapi.gateway.paasw.com/sms/smsUp
 返回参数
 ```json
 {
-  "code" : 0,
-  "msg" : "接收成功"
+  "code" : "10000",
+  "msg" : "请求成功"
 }
 ```
 
@@ -156,8 +156,8 @@ http://openapi.gateway.paasw.com/sms/balance
 
 ```json
 {
-  "code":"0"
-  "message":"OK",
+  "code":"10000"
+  "message":"请求成功",
   "balance" : 100.00
 }
 ```
