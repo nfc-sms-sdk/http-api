@@ -10,11 +10,11 @@ import UrlHelper
 # TODO 从 ${ObtainTokenDemo.py} 获取
 token = "7aAwkbzy3T3vNGKbtULC548WbV3F0omXHrZYQ2Ut343uvghLboPfb2sAhSIs5jrH0B_lZehQMlTKQxK0tmJ3QxmbG-hWN7EAPfH8B5DifrU="
 #修改为您要发送的手机号,多个以逗号分开
-phoneNumbers = "13052253109"
+phoneNumbers = "13000000000"
 #签名
-sign = "厚本金融"
+sign = "NFC"
 #内容，自定义，可前后签名 必须带【】
-content = "【厚本金融】验证码${code}，您正在注册成为新用户，感谢您的支持！"
+content = "【NFC】验证码${code}，您正在注册成为新用户，感谢您的支持！"
 #参数
 paramJson="[{\"code\" : \"99995555\"}]"
 #模板ID

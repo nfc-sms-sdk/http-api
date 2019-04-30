@@ -29,10 +29,10 @@ public class SmsSendDemo {
         //TODO 从 ${com.nfc.sdk.demo.ObtainTokenDemo} 获取
         String token="3i3TRCOuNIoqgeYqUBpk1f4MGiQ2EKv-DPquHQhZSuBnfVs6HItO02f2iRoliQpWiHV69wVVtWKh_YoyAD59ZhXDFLfMpXxKZRun0BuqpYY=";
         //修改为您要发送的手机号,多个以逗号分开
-        String phoneNumbers = "13052253109";
-        String sign = "张三";
-        //设置您要发送的内容：其中“【】”中括号为运营商签名符号，多签名内容前置添加提交
-        String content = "【张三】我的金额还剩余100000。如非本人操作，请忽略。";
+        String phoneNumbers = "13000000000";
+        String sign = "NFC";
+        //设置您要发送的内容：其中“【】”中括号为运营商签名符号
+        String content = "【NFC】我的金额还剩余100000。如非本人操作，请忽略。";
         Map<String, Object> params = new HashMap<>();
         params.put("token", token);
         params.put("phoneNumbers", phoneNumbers);
