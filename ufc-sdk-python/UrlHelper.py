@@ -5,7 +5,7 @@
     请求URL
 """
 
-BASE_URL = "http://127.0.0.1:9082"
+BASE_URL = "http://openapi.gateway.paasw.com"
 
 #获取token
 URL_TOKEN = "%s/api/token" % (BASE_URL)
