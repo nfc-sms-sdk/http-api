@@ -1,4 +1,4 @@
-package com.ufc.sdk.util;
+package com.nfc.sdk.util;
 
 /**
  * @author HanKeQi

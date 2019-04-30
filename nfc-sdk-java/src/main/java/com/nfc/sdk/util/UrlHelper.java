@@ -1,14 +1,14 @@
 /**
  * Project Name:
- * Class Name:com.ufc.sdk.util.java
+ * Class Name:com.nfc.sdk.util.java
  * <p>
  * Version     Date         Author
  * -----------------------------------------
  * 1.0    2015年11月17日      HanKeQi
  * <p>
- * Copyright (c) 2019, ufc All Rights Reserved.
+ * Copyright (c) 2019, nfc All Rights Reserved.
  */
-package com.ufc.sdk.util;
+package com.nfc.sdk.util;
 
 /**
  * @author HanKeQi

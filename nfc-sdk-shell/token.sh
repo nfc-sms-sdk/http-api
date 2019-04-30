@@ -2,7 +2,7 @@
 # account and password can be change to what you wanna!
 #author HanKeQi
 #
-#参数的配置,登录ufc paasw平台获取
+#参数的配置,登录nfc paasw平台获取
 appId="xxxxx"                       #修改为您的API账号
 secret="xxxx"                      #修改为您的API密码
 url="http://openapi.gateway.paasw.com/api/token?appId=$appId&secret=$secret"

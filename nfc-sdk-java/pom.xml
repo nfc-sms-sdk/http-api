@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ufc.sdk</groupId>
-    <artifactId>ufc-sdk-java</artifactId>
+    <groupId>com.nfc.sdk</groupId>
+    <artifactId>nfc-sdk-java</artifactId>
     <version>0.0.1</version>
 </project>

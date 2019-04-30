@@ -1,18 +1,18 @@
 /**
  * Project Name:
- * Class Name:com.ufc.sdk.demo.java
+ * Class Name:com.nfc.sdk.demo.java
  * <p>
  * Version     Date         Author
  * -----------------------------------------
  * 1.0    2015年11月17日      HanKeQi
  * <p>
- * Copyright (c) 2019, ufc All Rights Reserved.
+ * Copyright (c) 2019, nfc All Rights Reserved.
  */
-package com.ufc.sdk.demo;
+package com.nfc.sdk.demo;
 
-import com.ufc.sdk.util.HttpclientHelper;
-import com.ufc.sdk.util.MethodHelper;
-import com.ufc.sdk.util.UrlHelper;
+import com.nfc.sdk.util.MethodHelper;
+import com.nfc.sdk.util.HttpclientHelper;
+import com.nfc.sdk.util.UrlHelper;
 
 import java.util.HashMap;
 import java.util.Map;
