@@ -2,6 +2,7 @@ import requests
 import UrlHelper
 
 """
+    author HanKeQi
     发送普通短信
 """
 # TODO 从 ${ObtainTokenDemo.py} 获取
