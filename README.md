@@ -28,8 +28,9 @@ http://openapi.gateway.paasw.com/sms/send
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
 |token |用户密钥通过接口获取 |String |k67jwkqzSqN6gtGHjo8KwrQrkfE4r6m4px5YEpjsWnYoBZxFwNzxQrxdQbzDSdkr |是|200
 |phoneNumbers |发送手机号，多个以,分割，最多1000|String |13651688564，13568988547 |是|1500
-|sign |签名不包含【】|是|圆通快递|是|20
-|content |发送内容，包含【XX】签名|是|你的快件56682551825已签收，谢谢使用|是|1000
+|sign |签名不包含【】|String|圆通快递|是|20
+|content |发送内容，包含【XX】签名|String|你的快件56682551825已签收，谢谢使用|是|1000
+|kind |短信类型|String|1、验证码，2、普通短信，3、营销短信。<span style="color: red">`如果配置的是支持多种类型则是必传字段!!!`</span>|仔细查看描述|1000
 
 返回参数
 ```json
@@ -51,9 +52,9 @@ http://openapi.gateway.paasw.com/sms/sendTemplate
 |token |用户密钥通过接口获取|String |k67jwkqzSqN6gtGHjo8KwrQrkfE4r6m4px5YEpjsWnYoBZxFwNzxQrxdQbzDSdkr |是|200
 |phoneNumbers |发送手机号，多个以,分割，最多1000|String|13651688564，13568988547 |是|1500
 |paramJson|短信模板参数|String|[{"name":"paramJson"},{"name":"paramJson"}]|是|100
-|templateId |短信模板ID，必须已经审核通过的模板|是|1192360392260608|是|20
-|sign |签名不包含【】|是|圆通快递|是|20|
-|content |发送内容|是|你的快件56682551825已签收，谢谢使用|是|1000
+|templateId |短信模板ID，必须已经审核通过的模板|String|1192360392260608|是|20
+|sign |签名不包含【】|String|圆通快递|是|20|
+|content |发送内容|String|你的快件56682551825已签收，谢谢使用|是|1000
 
 返回参数
 ```json
@@ -72,7 +73,7 @@ http://openapi.gateway.paasw.com/sms/deliver
 | 参数|描述|类型|示例|是否必填|最大长度
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
 |token |用户密钥通过接口获取 |String |k67jwkqzSqN6gtGHjo8KwrQrkfE4r6m4px5YEpjsWnYoBZxFwNzxQrxdQbzDSdkr |是|200
-|sign |签名不包含【】|是|圆通快递|否|20
+|sign |签名不包含【】|String|圆通快递|否|20
 
 #####2：推送
 推送数据格式
@@ -108,7 +109,7 @@ http://openapi.gateway.paasw.com/sms/smsUp
 |参数|描述|类型|示例|是否必填|最大长度
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
 |token |用户密钥通过接口获取 |String |k67jwkqzSqN6gtGHjo8KwrQrkfE4r6m4px5YEpjsWnYoBZxFwNzxQrxdQbzDSdkr |是|64
-|sign |签名不包含【】|是|圆通快递|是|20
+|sign |签名不包含【】|String|圆通快递|是|20
 
 返回参数：
 可能返回多条
