@@ -82,14 +82,14 @@ http://openapi.gateway.paasw.com/sms/deliver
 ```json
 [
   {
-    "phone_number" : "13900000001",
-    "send_time" : "2017-01-01 00:00:00",
-    "report_time" : "2017-01-01 00:00:00",
+    "phoneNumber" : "13900000001",
+    "sendTime" : "2017-01-01 00:00:00",
+    "reportTime" : "2017-01-01 00:00:00",
     "success" : true,
     "code" : "10000",//10000:用户接收成功；1：提交失败，4：失败，5：屏蔽词，6：审核驳回，7：黑/白名单，8：超频，9：未知
     "message" : "请求成功",
-    "sms_size" : "1",
-    "biz_id" : "39036632588910887018",
+    "smsSize" : "1",
+    "bizId" : "39036632588910887018",
   }
 ]
 ```
@@ -116,11 +116,10 @@ http://openapi.gateway.paasw.com/sms/smsUp
 ```json
 [
   {
-    "phone_number" : "18612345678",
-    "send_time" : "2017-09-01 00:00:00",
+    "phoneNumber" : "18612345678",
+    "sendTime" : "2017-09-01 00:00:00",
     "content" : "内容",
-    "sign" : "签名",
-    "sequence_id" : 1234567890
+    "bizId" : 1234567890
   }
 ]
 ```
@@ -131,11 +130,11 @@ http://openapi.gateway.paasw.com/sms/smsUp
 ```json
 [
   {
-    "phone_number" : "18612345678",
-    "send_time" : "2017-09-01 00:00:00",
+    "phoneNumber" : "18612345678",
+    "sendTime" : "2017-09-01 00:00:00",
     "content" : "内容",
     "sign" : "签名",
-    "sequence_id" : 1234567890
+    "bizId" : 1234567890
   }
 ]
 ```
