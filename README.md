@@ -119,7 +119,7 @@ http://openapi.gateway.paasw.com/sms/smsUp
     "phoneNumber" : "18612345678",
     "sendTime" : "2017-09-01 00:00:00",
     "content" : "内容",
-    "bizId" : 1234567890
+    "sequenceId" : 1234567890
   }
 ]
 ```
@@ -134,7 +134,7 @@ http://openapi.gateway.paasw.com/sms/smsUp
     "sendTime" : "2017-09-01 00:00:00",
     "content" : "内容",
     "sign" : "签名",
-    "bizId" : 1234567890
+    "sequenceId" : 1234567890
   }
 ]
 ```
