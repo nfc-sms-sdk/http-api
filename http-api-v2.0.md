@@ -37,14 +37,16 @@ data字段数据格式如下
 返回值,如果由于密钥重置导致token失效开发者应该实现重试获取token的逻辑。
 返回报文示例
 ```json
+
 {
     "code": 0,
     "message": "请求成功",
     "data": {
-    "expires_in": 7200,
-    "token":"bIAYGqdLHhyz0UyVnZAKgzvVGCx0dT8aNmLHIUUomLLg0PCR1_GXH7_snrzJG_1Id_vciCwBuH4VBhN6Wj2p1JkBmHGsFjrImnd_IRPzHM="
-                }
+        "expires_in": 7200,
+        "token":"bIAYGqdLHhyz0UyVnZAKgzvVGCx0dT8aNmLHIUUomLLg0PCR1_GXH7_snrzJG_1Id_vciCwBuH4VBhN6Wj2p1JkBmHGsFjrImnd_IRPzHM="
+            }    
 }
+
 ``` 
 ####  2: token获取接口(key=value格式)
 Https/HTTP请求方式：post  
@@ -76,6 +78,7 @@ data字段数据格式如下
 返回值,如果由于密钥重置导致token失效开发者应该实现重试获取token的逻辑。
 返回报文示例
 ```json
+
 {
     "code": 0,
     "message": "请求成功",
@@ -84,6 +87,7 @@ data字段数据格式如下
     "token":"bIAYGqdLHhyz0UyVnZAKgzvVGCx0dT8aNmLHIUUomLLg0PCR1_GXH7_snrzJG_1Id_vciCwBuH4VBhN6Wj2p1JkBmHGsFjr-   Imnd_IRPzHM="
                 }
 }
+
 ``` 
 ####  3:普通发送接口（json格式）
 Https/HTTP请求方式：post  
@@ -102,6 +106,7 @@ Https/HTTP请求方式：post
 
 请求报文示例
 ```json
+
 { 
   "token":"pGxh639MQAVaZvOEn4uzMRkIQEw_EQh9FHi_UDmexpDJ3frYdLSVoTf63UYQG1Uhz5PIe7g_XAvqX_cRs3G0zAe6YQa",
   "mobile":"15053621452,15863254125",
@@ -110,6 +115,7 @@ Https/HTTP请求方式：post
   "extNo":"8888",
   "time":""
 }
+
 ```
 返回参数
 
@@ -132,6 +138,7 @@ data字段数据格式如下
     "message":"请求成功",
     "data":{"batchId":1234567890123456}
 }
+
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
 
@@ -166,11 +173,13 @@ data字段数据格式如下
 
 返回报文示例
 ```json
+
 {
     "code":0,
     "message":"请求成功",
     "data":{"batchId":1234567890123456}
 }
+
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
 ####  5: 模板短信发送接口（json格式）
@@ -203,6 +212,7 @@ Https/HTTP请求方式：post
   "extNo":"8866",
   "time":""
 }
+
 ```
 返回参数
 
@@ -220,11 +230,13 @@ data字段数据格式如下
 
 返回报文示例
 ```json
+
 {
     "code":0,
     "message":"请求成功",
     "data":{"batchId":1234567890123456}
 }
+
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
 ####  6: 模板短信发送接口（key=value格式）
@@ -259,11 +271,13 @@ data字段数据格式如下
 
 返回报文示例
 ```json
+
 {
     "code":0,
     "message":"请求成功",
     "data":{"batchId":1234567890123456}
 }
+
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
 ####  7: 状态(回执)查询接口（json格式）
@@ -302,25 +316,27 @@ data字段数据格式如下
 
 返回报文示例
 ```json
+
 {
     "code":0,
     "message":"请求成功",
     "count":2,
     "data":[
             {
-                "mobile" : "13900000001", 
-                "chnRptDate" : "2017-01-01 00:00:00", 
-                "chnRptCode" : "DB:0141",
-                "batchId" : "3903663258891088785"
-            },
+                "mobile" : "13900000001", 
+                "chnRptDate" : "2017-01-01 00:00:00", 
+                "chnRptCode" : "DB:0141",
+                "batchId" : "3903663258891088785"
+            },
             {
-                "mobile" : "13900000001", 
-                "chnRptDate" : "2017-01-01 00:00:00", 
-                "chnRptCode" : "DB:0141",
-                "batchId" : "39036632588910887018"
-            }
+                "mobile" : "13900000001", 
+                "chnRptDate" : "2017-01-01 00:00:00", 
+                "chnRptCode" : "DB:0141",
+                "batchId" : "39036632588910887018"
+            }
         ]
 }
+
 ```
 
 ####  8: 上行查询接口（json格式）
@@ -359,24 +375,26 @@ data字段数据格式如下
 
 返回报文示例
 ```json
-{    
+
+{    
 "code":0,
 "message":"请求成功",
-"count":2,    
+"count":2,    
 "data":[
-        {
-            "mobile":"15000000002",
-            "extNo":"1234567890",
-            "content":"收到短信了",
-            "replyDate":"2019-01-01 08:08:08"
-        },
-        {
-            "mobile":"15000000002",
-            "extNo":"1234567890",
-            "content":"收到短信了",
-            "replyDate":"2019-01-01 08:08:08"
-        }
-    ]}
+        {
+            "mobile":"15000000002",
+            "extNo":"1234567890",
+            "content":"收到短信了",
+            "replyDate":"2019-01-01 08:08:08"
+        },
+        {
+            "mobile":"15000000002",
+            "extNo":"1234567890",
+            "content":"收到短信了",
+            "replyDate":"2019-01-01 08:08:08"
+        }
+    ]}
+
 ```
 
 ####  9: 余额查询接口（json格式）
@@ -411,13 +429,15 @@ data字段数据格式如下
 
 返回报文示例
 ```json
-{    
-"code":0,    
-"message":"请求成功",    
+
+{    
+"code":0,    
+"message":"请求成功",    
 "data":{
-        "balance":532
-    }
+        "balance":532
+    }
  }
+
 ```
 ####  10: 余额查询接口（key=value格式）
 Https/HTTP请求方式: post  
@@ -445,13 +465,15 @@ data字段数据格式如下
 
 返回报文示例
 ```json
-{    
-"code":0,    
-"message":"请求成功",    
+
+{    
+"code":0,    
+"message":"请求成功",    
 "data":{
-        "balance":532
-    }
+        "balance":532
+    }
  }
+
 ```
 ####  11: 状态(回执)推送（json格式）
 Https/HTTP请求方式: 主动推送，无需请求，只需在管理端配置相应用户推送地址  
@@ -476,23 +498,25 @@ data字段数据格式如下
 
 返回报文示例
 ```json
+
 {
     "count":2,
     "data":[
             {
-                "mobile" : "13900000001", 
-                "chnRptDate" : "2017-01-01 00:00:00", 
-                "chnRptCode" : "DB:0141",
-                "batchId" : "3903663258891088785"
-            },
+                "mobile" : "13900000001", 
+                "chnRptDate" : "2017-01-01 00:00:00", 
+                "chnRptCode" : "DB:0141",
+                "batchId" : "3903663258891088785"
+            },
             {
-                "mobile" : "13900000001", 
-                "chnRptDate" : "2017-01-01 00:00:00", 
-                "chnRptCode" : "DB:0141",
-                "batchId" : "39036632588910887018"
-            }
+                "mobile" : "13900000001", 
+                "chnRptDate" : "2017-01-01 00:00:00", 
+                "chnRptCode" : "DB:0141",
+                "batchId" : "39036632588910887018"
+            }
         ]
 }
+
 ```
 
 ####  12: 上行推送（json格式）
