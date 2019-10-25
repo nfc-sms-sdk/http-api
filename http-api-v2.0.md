@@ -1,7 +1,7 @@
 # http-api-v2.0
 短信发送相关接口v2.0版本
 ####  1: token获取接口(json格式)
-Https/HTTP请求方式：post (请求体传参)
+Https/HTTP请求方式：post (请求体传参)  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/token  
 请求参数
