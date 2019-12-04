@@ -89,7 +89,11 @@ data字段数据格式如下
 }
 
 ``` 
-####  3:普通发送接口（json格式）
+####  3: 获取固定token
+必备条件：请先配置正常能够发送的通道
+在个人信息右上角-配置信息中，点击获取固定token,即可获取固定token，如果因为token泄漏需要更换token可重新关闭再开启固定token即可，固定token不会失效可长期使用
+
+####  4:普通发送接口（json格式）
 Https/HTTP请求方式：post  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/send  
@@ -142,7 +146,7 @@ data字段数据格式如下
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
 
-####  4:普通发送接口（key=value格式）
+####  5:普通发送接口（key=value格式）
 Https/HTTP请求方式：post  
 数据格式：form表单  
 请求地址：http://openapi.gateway.paasw.com/msg/send  
@@ -182,7 +186,7 @@ data字段数据格式如下
 
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
-####  5: 模板短信发送接口（json格式）
+####  6: 模板短信发送接口（json格式）
 Https/HTTP请求方式：post  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/sendTemplate  
@@ -239,7 +243,7 @@ data字段数据格式如下
 
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
-####  6: 模板短信发送接口（key=value格式）
+####  7: 模板短信发送接口（key=value格式）
 Https/HTTP请求方式：post  
 数据格式：form表单  
 请求地址：http://openapi.gateway.paasw.com/msg/sendTemplate  
@@ -280,7 +284,7 @@ data字段数据格式如下
 
 ```
 batchId: 发送回执ID，可根据该ID查询提交状态，对应批次batchId。
-####  7: 状态(回执)查询接口（json格式）
+####  8: 状态(回执)查询接口（json格式）
 Https/HTTP请求方式: post  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/deliver  
@@ -339,7 +343,7 @@ data字段数据格式如下
 
 ```
 
-####  8: 上行查询接口（json格式）
+####  9: 上行查询接口（json格式）
 Https/HTTP请求方式: post  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/mo  
@@ -397,7 +401,7 @@ data字段数据格式如下
 
 ```
 
-####  9: 余额查询接口（json格式）
+####  10: 余额查询接口（json格式）
 Https/HTTP请求方式: post  
 数据格式：json  
 请求地址：http://openapi.gateway.paasw.com/message/balance  
@@ -439,7 +443,7 @@ data字段数据格式如下
  }
 
 ```
-####  10: 余额查询接口（key=value格式）
+####  11: 余额查询接口（key=value格式）
 Https/HTTP请求方式: post  
 数据格式：form表单  
 http://openapi.gateway.paasw.com/msg/balance  
@@ -475,7 +479,7 @@ data字段数据格式如下
  }
 
 ```
-####  11: 状态(回执)推送（json格式）
+####  12: 状态(回执)推送（json格式）
 Https/HTTP请求方式: 主动推送，无需请求，只需在管理端配置相应用户推送地址  
 数据格式：json  
 推送方式：post  
@@ -519,7 +523,7 @@ data字段数据格式如下
 
 ```
 
-####  12: 上行推送（json格式）
+####  13: 上行推送（json格式）
 Https/HTTP请求方式: 主动推送，无需请求，只需在管理端配置相应用户推送地址  
 数据格式：json  
 推送方式：post  
